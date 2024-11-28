@@ -190,7 +190,7 @@ class GestorEscuela:
             LEFT JOIN Cursos c ON a.curso_id = c.id
             WHERE a.documento = ?
         ''', (documento,))
-        return self.cursor.fetchone()
+        return self.cursor.fetchone() # Usamos fetchone() para obtener la primera fila que coincida
 
     def buscar_docente(self, documento):
         # Buscamos al docente por documento y mostramos sus detalles
