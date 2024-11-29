@@ -335,17 +335,17 @@ def main():
         opcion = input("\nSeleccione una opción: ")
         
         if opcion == "1":
+            documento = input("Documento del alumno: ")
             nombre = input("Nombre del alumno: ")
             apellido = input("Apellido del alumno: ")
-            documento = input("Documento del alumno: ")
             fecha_nacimiento = input("Fecha de nacimiento (YYYY-MM-DD): ")
             curso_id = input("ID del curso: ")
             gestor.agregar_alumno(nombre, apellido, documento, fecha_nacimiento, int(curso_id))
         
         elif opcion == "2":
+            documento = input("Documento del docente: ")
             nombre = input("Nombre del docente: ")
             apellido = input("Apellido del docente: ")
-            documento = input("Documento del docente: ")
             fecha_nacimiento = input("Fecha de nacimiento (YYYY-MM-DD): ")
             gestor.agregar_docente(nombre, apellido, documento, fecha_nacimiento)
         
